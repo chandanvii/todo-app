@@ -7,7 +7,7 @@ metadata:
   name: mysql-pod
 spec:
   containers:
-  - image: mysq
+  - image: mysql
     name: mysql-pod
     envFrom:
     - configMapRef:
