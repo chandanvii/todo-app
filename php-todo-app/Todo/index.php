@@ -137,21 +137,27 @@
 			margin: 4px 2px;
 			cursor: pointer;
 		}
-		
 	</style>
 </head>
 <body>
-<div class="wrapper">
-	<form method="post" action="index.php">
-		<div>
-			<center>
-			<input type="text" name="todo" placeholder="create new todo" value="<?php if (isset($_POST['update_id'])) {echo $data['todo'];}  ?>" required>
-			<input type="hidden" name="id" value="<?php if (isset($_POST['update_id'])) {echo $data['id'];}  ?>" >
-			<input class="button" type="submit" value="Submit">
-			</center>
-		</div>
-	</form>
-	<br><br>
+	<center>
+		<h1>This is the Todo App made by Chandan</h1>
+	</center>
+	<div class="wrapper">
+		<form method="post" action="index.php">
+			<div>
+				<center>
+				<input type="text" name="todo" placeholder="create new todo" value="<?php if (isset($_POST['update_id'])) {echo $data['todo'];}  ?>" required>
+				<input type="hidden" name="id" value="<?php if (isset($_POST['update_id'])) {echo $data['id'];}  ?>" >
+				<input class="button" type="submit" value="Submit">
+				</center>
+			</div>
+		</form>
+		<br><br>
+	</div>
+</body>
+</html>
+
 
 	<?php 
 	$query = "select * from todos order by id desc";
