@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: phpadmin-config
+data:
+  PMA_USER: root
+  PMA_PASSWORD: rootpassword
